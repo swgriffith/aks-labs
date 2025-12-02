@@ -1,0 +1,8 @@
+{
+    "label": "Challenges",
+    "position": 9,
+    "link": {
+      "type": "generated-index",
+      "description": "AKS challenge based labs"
+    }
+}
