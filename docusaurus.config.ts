@@ -22,7 +22,10 @@ const config: Config = {
   projectName: 'aks-labs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -70,6 +73,22 @@ const config: Config = {
         },
       } satisfies Preset.Options,
 
+    ],
+  ],
+
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+        blogRouteBasePath: '/',
+        docsRouteBasePath: ['/docs'],
+        indexBlog: true,         // Set to true to index blog
+        indexDocs: true,        // Set to true to index docs
+      },
     ],
   ],
 

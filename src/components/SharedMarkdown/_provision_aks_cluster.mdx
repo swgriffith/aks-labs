@@ -1,4 +1,4 @@
-import CodeBlock from '@theme/CodeBlock';
+import CodeBlock from "@theme/CodeBlock";
 
 export const AksCreateCommand = ({ version }) => {
   const versionLine = version ? `--kubernetes-version ${version} \\
@@ -15,7 +15,7 @@ ${versionLine}--network-plugin azure \\
 --enable-managed-identity \\
 --enable-workload-identity \\
 --enable-oidc-issuer \\
---generate-ssh-keys`;
+--ssh-access disabled`;
 
 return (
 

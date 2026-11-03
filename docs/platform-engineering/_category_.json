@@ -1,7 +1,6 @@
 {
-    "label": "Platform Engineering",
-    "position": 7,
-    "link": {
-      "type": "generated-index"
-    }
+  "label": "Platform Engineering",
+  "link": {
+    "type": "generated-index"
+  }
 }

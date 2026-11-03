@@ -1,7 +1,6 @@
 {
-    "label": "Migration",
-    "position": 8,
-    "link": {
-      "type": "generated-index"
-    }
+  "label": "Migration",
+  "link": {
+    "type": "generated-index"
+  }
 }
